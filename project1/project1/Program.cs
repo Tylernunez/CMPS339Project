@@ -10,6 +10,16 @@ namespace project1
     {
         static void Main(string[] args)
         {
+            bool exit = false;
+
+            Console.WriteLine("Welcome to C# DBMS version 0.1.\n" + "Enter Command: " );
+            while(exit != true)
+            {
+                string command = Console.ReadLine();
+                commandParser parsey = new commandParser();
+                parsey.parseCommand(command);
+            }
+
         }
     }
 }
